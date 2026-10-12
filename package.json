@@ -1,0 +1,12 @@
+{
+  "name": "eduadapt-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "EduAdapt AI — Multimodal Adaptive Learning System",
+  "scripts": {
+    "frontend:dev": "npm --prefix frontend run dev",
+    "frontend:build": "npm --prefix frontend run build",
+    "backend:test": "backend\\.venv\\Scripts\\python -m pytest -v backend/tests",
+    "eval": "backend\\.venv\\Scripts\\python evaluation/run_evaluation.py"
+  }
+}

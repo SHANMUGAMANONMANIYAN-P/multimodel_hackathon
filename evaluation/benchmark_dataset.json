@@ -1,0 +1,56 @@
+[
+  {
+    "id": "bench_01_eigenvalues",
+    "question": "What is the relationship between eigenvalues and the trace of a matrix in linear transformations?",
+    "type": "in_corpus",
+    "expected_keywords": ["eigenvalue", "trace", "sum", "matrix"],
+    "is_supported": true,
+    "expected_source": "pdf",
+    "ground_truth": "The sum of the eigenvalues of a matrix is strictly equal to the trace of the matrix: Tr(A) = sum(lambda_i)."
+  },
+  {
+    "id": "bench_02_gradient_rate",
+    "question": "Explain the role of the learning rate in gradient descent and the risk of setting it too high.",
+    "type": "in_corpus",
+    "expected_keywords": ["gradient", "learning rate", "diverge", "oscillate", "minimum"],
+    "is_supported": true,
+    "expected_source": "pdf",
+    "ground_truth": "The learning rate dictates step size. Setting it larger than 2 / lambda_max causes catastrophic divergence."
+  },
+  {
+    "id": "bench_03_figure_attention",
+    "question": "Based on the technical diagrams and architectural schematics in the materials, describe the forward pass structure of Scaled Dot-Product Attention.",
+    "type": "figure_diagram",
+    "expected_keywords": ["layer", "forward", "activation", "weights", "diagram", "softmax"],
+    "is_supported": true,
+    "expected_source": "pptx",
+    "ground_truth": "Attention(Q, K, V) = softmax((Q K^T) / sqrt(d_k)) V with key dimension normalization."
+  },
+  {
+    "id": "bench_04_autodiff_video",
+    "question": "Why is reverse-mode automatic differentiation computationally advantageous over forward-mode for neural network training?",
+    "type": "in_corpus",
+    "expected_keywords": ["reverse", "forward", "sweep", "parameters", "scalar"],
+    "is_supported": true,
+    "expected_source": "video",
+    "ground_truth": "For a scalar loss and N parameters, reverse-mode computes all N gradients in a single backward pass."
+  },
+  {
+    "id": "bench_05_unsupported_helium",
+    "question": "What are the chemical properties of liquid helium-4 superfluidity and its thermal conductivity?",
+    "type": "unsupported",
+    "expected_keywords": ["couldn't verify", "refusal", "not contain sufficient evidence"],
+    "is_supported": false,
+    "expected_source": null,
+    "ground_truth": "REFUSAL: Information absent from course materials."
+  },
+  {
+    "id": "bench_06_unsupported_k8s",
+    "question": "How do you configure Kubernetes Ingress Controller with Let's Encrypt cert-manager on GCP?",
+    "type": "unsupported",
+    "expected_keywords": ["couldn't verify", "refusal", "not contain sufficient evidence"],
+    "is_supported": false,
+    "expected_source": null,
+    "ground_truth": "REFUSAL: Information absent from course materials."
+  }
+]
